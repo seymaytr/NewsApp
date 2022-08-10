@@ -23,10 +23,8 @@ struct WebView: UIViewRepresentable {
     }
 }
 
-#if DEBUG
 struct WebView_Previews: PreviewProvider {
     static var previews: some View {
         WebView(urlString: "https://www.apple.com")
     }
 }
-#endif

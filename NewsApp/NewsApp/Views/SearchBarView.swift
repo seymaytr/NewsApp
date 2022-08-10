@@ -40,7 +40,7 @@ struct SearchBarView: View {
         .background(Color.red)
     }
     
-    func searchTextFieldView() -> some View {
+    private func searchTextFieldView() -> some View {
         HStack {
             Image(systemName: "magnifyingglass")
             TextField("enterText".localized(), text: $searchText)
@@ -57,7 +57,7 @@ struct SearchBarView: View {
         }
     }
     
-    func searchButton() -> some View {
+    private func searchButton() -> some View {
         Button(action: {
             withAnimation {
                 show.toggle()

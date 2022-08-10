@@ -11,13 +11,11 @@ import SwiftUI
 
 struct ShareSheet: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {
-   }
+    }
     
-   // the data you need to share ...I
     var items: [Any]
     func makeUIViewController(context: Context) -> UIActivityViewController {
         let controller = UIActivityViewController(activityItems: items, applicationActivities: nil)
         return controller
+    }
 }
-   }
-   

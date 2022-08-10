@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct NewsScreen: View {
     @ObservedObject var viewModel: NewsScreenViewModel
@@ -16,6 +17,7 @@ struct NewsScreen: View {
             VStack {
                 SearchBarView(size: .init(width: size.width, height: size.height/7)) { text in
                     viewModel.getArticle(text: text)
+                    viewModel.sendLogEvent(name: "searched", parameters: ["search_text": text])
                 }
                 Spacer()
                 ScrollView {
