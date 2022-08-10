@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  NewsApp
+
+  Created by Seyma Yeter on 9.08.2022.
+  
+*/
+
+
+"news"       = "News";
+"favorites"  = "Favorites";
+"newsDetail" = "News detail";
+"enterText"  = "Search News";
+"minutesAgo" = "minutes ago";
+"hourAgo"    = "an hour ago";
+"yesterday"  = "yesterday";
+"now"        = "now";
+"daysAgo"    = "days ago";
